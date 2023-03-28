@@ -12,3 +12,4 @@ Data cleaning and exploration was done using SQL. was done where necessary using
 
 
 
+
