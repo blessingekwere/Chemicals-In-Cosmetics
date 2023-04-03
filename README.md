@@ -12,7 +12,7 @@ A chemical is any substance that has a defined composition. In other words, a ch
 This data reflect information that has been reported to the California Safe Cosmetics Program (CSCP) in the California Department of Public Health (CDPH). The primary purpose of the CSCP is to collect information on hazardous and potentially hazardous ingredients in cosmetic products sold in California and to make this information available to the public. For all cosmetic products sold in California, the California Safe Cosmetics Act (“the Act”) requires the manufacturer, packer, and/or distributor named on the product label to provide to the CSCP a list of all cosmetic products that contain any ingredients known or suspected to cause cancer, birth defects, or other developmental or reproductive harm.
 To assist companies with reporting, CDPH has compiled a list of reportable ingredients based on lists and reports available from the authoritative scientific bodies cited in the Act to cause cancer or reproductive harm; it is meant to serve as guidance and is not all-inclusive. Companies with reportable ingredients in their products must submit information to the California Safe Cosmetics Program.
 
-##Objective of the project
+## Objective of the project
 The objective of this project is to get to know more about the chemicals used in cosmetics and personal care products and to answer a few questions about it. I decided to use Microsoft SQL server for the exploration and analysis of this data and then use Tableau for the Visualization.
 So what’s really in your makeup bag? Scroll through and take a look at some of the most popular cosmetics ingredients.
 
@@ -27,7 +27,7 @@ Data cleaning and exploration was done using SQL. was done where necessary using
 
 ## Data Collection
 This data was downloaded from Kaggle. It contains 114,298 rows and 23 columns. The columns contained information such as
-####_ Index — Serial Number
+#### _ Index — Serial Number
 . CDPHId -The California Department of Public Health (CDPH) internal identification number for product.
 . ProductName — Product name as entered by manufacturer, packer and/or distributor.
 . CSFId- CDPH internal identification number for a color/scent/flavor.
