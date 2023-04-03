@@ -8,7 +8,7 @@ A chemical is any substance that has a defined composition. In other words, a ch
 ![](Cosmetics_Picture.jpg)
 ###### Photo Source: Google
 
-##About the Dataset
+## About the Dataset
 This data reflect information that has been reported to the California Safe Cosmetics Program (CSCP) in the California Department of Public Health (CDPH). The primary purpose of the CSCP is to collect information on hazardous and potentially hazardous ingredients in cosmetic products sold in California and to make this information available to the public. For all cosmetic products sold in California, the California Safe Cosmetics Act (“the Act”) requires the manufacturer, packer, and/or distributor named on the product label to provide to the CSCP a list of all cosmetic products that contain any ingredients known or suspected to cause cancer, birth defects, or other developmental or reproductive harm.
 To assist companies with reporting, CDPH has compiled a list of reportable ingredients based on lists and reports available from the authoritative scientific bodies cited in the Act to cause cancer or reproductive harm; it is meant to serve as guidance and is not all-inclusive. Companies with reportable ingredients in their products must submit information to the California Safe Cosmetics Program.
 
@@ -25,7 +25,7 @@ This dataset was downloaded from Kaggle, the data was made up of 114,298 rows an
 ### Data Cleaning and Exploration
 Data cleaning and exploration was done using SQL. was done where necessary using the update command. Excess spaces were also removed where necessary using the Trim command making the data ready for analysis.
 
-##Data Collection
+## Data Collection
 This data was downloaded from Kaggle. It contains 114,298 rows and 23 columns. The columns contained information such as
 . Index — Serial Number
 . CDPHId -The California Department of Public Health (CDPH) internal identification number for product.
@@ -37,12 +37,12 @@ This data was downloaded from Kaggle. It contains 114,298 rows and 23 columns. T
 . BrandName — Brand name as entered by manufacturer, packer and/or distributor. .
 . PrimaryCategoryId — CDPH internal identification number for category.
 . PrimaryCategory — Type of product (13 primary categories: Baby Products, Bath Products, Fragrances, Hair Care Products (non-coloring), Hair Coloring Products, Makeup Products (non-permanent), Nail Products, Oral Hygiene Products, Personal Care Products, Shaving Products, Skin Care Products, Sun-Related Products, Tattoos and Permanent Makeup).
-. SubCategoryId — CDPH internal identification number for subcategory.
-. SubCategory — Type of product within one of the 13 primary categories.
-. CasId — CDPH internal identification number for chemical.
-. CasNumber — Chemical identification number
-. ChemicalId — CDPH internal identification number for this chemical’s record specific to this product.
-. ChemicalName — Name of chemical substance in cosmetic product. Note that chemical substances may have more than one Chemical Name.
+_ SubCategoryId — CDPH internal identification number for subcategory.
+_ SubCategory — Type of product within one of the 13 primary categories.
+_ CasId — CDPH internal identification number for chemical.
+_ CasNumber — Chemical identification number
+_ ChemicalId — CDPH internal identification number for this chemical’s record specific to this product.
+ChemicalName — Name of chemical substance in cosmetic product. Note that chemical substances may have more than one Chemical Name.
 . InitialDateReported — Date the product profile was created by manufacturer, packer and/or distributor, that is, the date that the product was first reported to CDPH.
 . MostRecentDateReported — Date the product profile was last modified by manufacturer, packer and/or distributor.
 . DiscontinuedDate — If applicable, date the product was discontinued.
