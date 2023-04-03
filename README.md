@@ -27,42 +27,71 @@ Data cleaning and exploration was done using SQL. was done where necessary using
 
 ## Data Collection
 This data was downloaded from Kaggle. It contains 114,298 rows and 23 columns. The columns contained information such as
- _ Index — Serial Number
-#### _ CDPHId -The California Department of Public Health (CDPH) internal identification number for product.
-#### _ ProductName — Product name as entered by manufacturer, packer and/or distributor.
-#### _ CSFId- CDPH internal identification number for a color/scent/flavor.
-#### _ CSF — Color, scent and/or flavor as entered by manufacturer, packer and/or distributor.
-#### _ CompanyId — CDPH internal identification number for company.
-#### _ Company Name — Company name as entered by manufacturer, packer and/or distributor.
-#### _ BrandName — Brand name as entered by manufacturer, packer and/or distributor. .
-#### _ PrimaryCategoryId — CDPH internal identification number for category.
-#### _ PrimaryCategory — Type of product (13 primary categories: Baby Products, Bath Products, Fragrances, Hair Care Products (non-coloring), Hair Coloring Products, Makeup Products (non-permanent), Nail Products, Oral Hygiene Products, Personal Care Products, Shaving Products, Skin Care Products, Sun-Related Products, Tattoos and Permanent Makeup).
-#### _ SubCategoryId — CDPH internal identification number for subcategory.
-#### __ SubCategory — Type of product within one of the 13 primary categories.
-_ CasId — CDPH internal identification number for chemical.
-_ CasNumber — Chemical identification number
-_ ChemicalId — CDPH internal identification number for this chemical’s record specific to this product.
+##### _ Index — Serial Number
+##### _ CDPHId -The California Department of Public Health (CDPH) internal identification number for product.
+##### _ ProductName — Product name as entered by manufacturer, packer and/or distributor.
+##### _ CSFId- CDPH internal identification number for a color/scent/flavor.
+##### _ CSF — Color, scent and/or flavor as entered by manufacturer, packer and/or distributor.
+##### _ CompanyId — CDPH internal identification number for company.
+##### _ Company Name — Company name as entered by manufacturer, packer and/or distributor.
+##### _ BrandName — Brand name as entered by manufacturer, packer and/or distributor. .
+##### _ PrimaryCategoryId — CDPH internal identification number for category.
+##### _ PrimaryCategory — Type of product (13 primary categories: Baby Products, Bath Products, Fragrances, Hair Care Products (non-coloring), Hair Coloring Products, Makeup Products (non-permanent), Nail Products, Oral Hygiene Products, Personal Care Products, Shaving Products, Skin Care Products, Sun-Related Products, Tattoos and Permanent Makeup).
+##### _ SubCategoryId — CDPH internal identification number for subcategory.
+##### _ SubCategory — Type of product within one of the 13 primary categories.
+##### _ CasId — CDPH internal identification number for chemical.
+##### _ CasNumber — Chemical identification number
+##### _ ChemicalId — CDPH internal identification number for this chemical’s record specific to this product.
 ChemicalName — Name of chemical substance in cosmetic product. Note that chemical substances may have more than one Chemical Name.
-. InitialDateReported — Date the product profile was created by manufacturer, packer and/or distributor, that is, the date that the product was first reported to CDPH.
-. MostRecentDateReported — Date the product profile was last modified by manufacturer, packer and/or distributor.
-. DiscontinuedDate — If applicable, date the product was discontinued.
-. ChemicalCreatedAt — The date that this chemical was first reported to CDPH for this product.
-. ChemicalUpdated At — Date this chemical report was last modified by manufacturer, packer and/or distributor. This field is unique from the product profile.
-. ChemicalDateRemoved — If applicable, date the chemical was removed from product, i.e., reformulation.
-. ChemicalCount — Total number of current chemicals reported for this product. This number does not include chemicals that have been removed from a product. This number is a calculated field based on current reporting.
+##### _ InitialDateReported — Date the product profile was created by manufacturer, packer and/or distributor, that is, the date that the product was first reported to CDPH.
+##### _ MostRecentDateReported — Date the product profile was last modified by manufacturer, packer and/or distributor.
+##### _ DiscontinuedDate — If applicable, date the product was discontinued.
+##### _ ChemicalCreatedAt — The date that this chemical was first reported to CDPH for this product.
+##### _ ChemicalUpdated At — Date this chemical report was last modified by manufacturer, packer and/or distributor. This field is unique from the product profile.
+##### _ ChemicalDateRemoved — If applicable, date the chemical was removed from product, i.e., reformulation.
+##### _ ChemicalCount — Total number of current chemicals reported for this product. This number does not include chemicals that have been removed from a product. This number is a calculated field based on current reporting.
 The link to the dataset can be found [here].
 
-##Data Cleaning
+## Data Cleaning
 I created a database called “Chemicals_In_Cosmetics” and then imported the data in a comma separated value (csv) format into Microsoft SQL server using the import and export wizard.
 It was quite a messy one, so definitely before proceeding to anything else, the data had to be cleaned to make it suitable to be used for further analysis and decision making. Some of the steps I took to clean the data was removing excess spaces using the trim command, formatting all columns correctly, checking for duplicates, null values, unprintable characters and misspellings.
 ![](Picture_1.png)
-######Using Trim Command to remove extra spaces from the Brand Name column
+###### Using Trim Command to remove extra spaces from the Brand Name column
 ![](Picture_2.png)
-######Formatting the ChemicalDateRemoved column to Datetime
-![](Picture_2.png)
-######Correcting the date in the ChemicalDateRemoved Column
+###### Formatting the ChemicalDateRemoved column to Datetime
+![](Picture_3.png)
+###### Correcting the date in the ChemicalDateRemoved Column
+![](Picture_4.png)
+
+## Analysis
+After cleaning the data, I had to write queries to answer few questions about the data. Some of which are:
+
+1: Chemicals used most in Cosmetic and Personal Care Products and showing the result in descending order
+![](Picture_5.png)
+
+The result of this query showed that Titanium Oxide is the most used chemical in cosmetic and personal care product with a count of 93,252. It was followed by Silica, crystalline with a count of 2742 and then retinol/retilyn esters with a count of 2154.
+Also, Arsenic (inorganic oxides) Cocamide, Spironolactone, Phenacemide, Extract of coffee bean, Diethanolamides of the fatty acids of coconut oil, Sodium Bromate, Acetylsalicylic acid, N-Nitroso-diethanolamine, Cocamide diethanolamine Vinyl acetate, Retinol palmitate, Distillates (coal tar), 2-Propyleneacrolein were the least used chemicals with a count of 1 respectively.
+
+2. Companies that used most reported chemicals in their cosmetics and personal care products.
+![](picture_6.png)
+The result of this query showed that L'Oréal USA is the company that used most reported chemicals in their cosmetics and personal care product with a count of 5,738 followed by Revlon Consumer Product Corporation with a count of 4,202 and Bare Escentuals Beauty, Inc. with a count 3,679
+
+The companies with the least reported chemicals were Zalan Products, Inc. with a count of 1, University Medical Pharmaceuticals Corp with a count of 1 and Cosmetic Dermatology Inc. with a count of 1 respectively.
 
 
+3. Identify the brands that had chemicals which were mostly reported in 2018.
+![](picture_7.png)
+The result of this query showed Brands that had chemicals that were mostly reported in 2018
 
+4. Which brands had chemicals discontinued and removed?
+![](picture_.png)
+The result of this query showed chemicals that were discontinued and removed
+
+5. Identify the period between the creation of the removed chemicals and when they were actually removed
+![](picture_8.png)
+This query showed the difference in the days between the day of creation and the date of removal of a chemical.
+
+6. How long were removed chemicals in baby products used?
+![](picture_9.png)
 
 
