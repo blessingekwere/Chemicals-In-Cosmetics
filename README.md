@@ -108,5 +108,5 @@ Chemicals In Cosmetics Dashboard
 
 ## Conclusion
 Now we have information on the chemicals in our cosmetics and personal care products which will help in making further informed decisions.
-**Thank you for reading** 
+**Thank you for reading** :gift_heart:
 
