@@ -50,7 +50,7 @@ ChemicalName — Name of chemical substance in cosmetic product. Note that chemi
 ##### _ ChemicalUpdated At — Date this chemical report was last modified by manufacturer, packer and/or distributor. This field is unique from the product profile.
 ##### _ ChemicalDateRemoved — If applicable, date the chemical was removed from product, i.e., reformulation.
 ##### _ ChemicalCount — Total number of current chemicals reported for this product. This number does not include chemicals that have been removed from a product. This number is a calculated field based on current reporting.
-The link to the dataset can be found [here].
+The link to the dataset can be found [here](https://www.kaggle.com/datasets/thedevastator/chemicals-in-cosmetics-what-s-really-in-your).
 
 ## Data Cleaning
 I created a database called “Chemicals_In_Cosmetics” and then imported the data in a comma separated value (csv) format into Microsoft SQL server using the import and export wizard.
@@ -84,7 +84,8 @@ The companies with the least reported chemicals were Zalan Products, Inc. with a
 The result of this query showed Brands that had chemicals that were mostly reported in 2018
 
 4. Which brands had chemicals discontinued and removed?
-![](picture_.png)
+![](picture_Q4.jpg)
+
 The result of this query showed chemicals that were discontinued and removed
 
 5. Identify the period between the creation of the removed chemicals and when they were actually removed
@@ -93,5 +94,19 @@ This query showed the difference in the days between the day of creation and the
 
 6. How long were removed chemicals in baby products used?
 ![](picture_9.png)
+The result of this query showed that it took 2097 days for Titanium dioxide to be removed from baby products and it took Cocamide diethanolamine Trade Secret 545 days and 13 days respectively.
 
+## Visualization
+![](picture_10.jpg)
+Chemicals In Cosmetics Dashboard
+
+## Insights
+.From my analysis, it shows that Titanium Dioxide is the most used chemical in cosmetics and personal care products.
+.I also found out that the brand that had most reported chemicals in 2018 was Two faced cosmetics.
+. The analysis also showed that the company that used most reported chemicals for production was L'Oréal USA.
+. Also the analysis showed that Titanium Dioxide, Cocamide diethanolamine and Trade Secret were used for 2,097, 545 and 13 days respectively in baby products.
+
+## Conclusion
+Now we have information on the chemicals in our cosmetics and personal care products which will help in making further informed decisions.
+**Thank you for reading** 
 
