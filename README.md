@@ -27,18 +27,18 @@ Data cleaning and exploration was done using SQL. was done where necessary using
 
 ## Data Collection
 This data was downloaded from Kaggle. It contains 114,298 rows and 23 columns. The columns contained information such as
-#### _ Index — Serial Number
-. CDPHId -The California Department of Public Health (CDPH) internal identification number for product.
-. ProductName — Product name as entered by manufacturer, packer and/or distributor.
-. CSFId- CDPH internal identification number for a color/scent/flavor.
-. CSF — Color, scent and/or flavor as entered by manufacturer, packer and/or distributor.
-. CompanyId — CDPH internal identification number for company.
-. Company Name — Company name as entered by manufacturer, packer and/or distributor.
-. BrandName — Brand name as entered by manufacturer, packer and/or distributor. .
-. PrimaryCategoryId — CDPH internal identification number for category.
-. PrimaryCategory — Type of product (13 primary categories: Baby Products, Bath Products, Fragrances, Hair Care Products (non-coloring), Hair Coloring Products, Makeup Products (non-permanent), Nail Products, Oral Hygiene Products, Personal Care Products, Shaving Products, Skin Care Products, Sun-Related Products, Tattoos and Permanent Makeup).
-_ SubCategoryId — CDPH internal identification number for subcategory.
-_ SubCategory — Type of product within one of the 13 primary categories.
+ _ Index — Serial Number
+#### _ CDPHId -The California Department of Public Health (CDPH) internal identification number for product.
+#### _ ProductName — Product name as entered by manufacturer, packer and/or distributor.
+#### _ CSFId- CDPH internal identification number for a color/scent/flavor.
+#### _ CSF — Color, scent and/or flavor as entered by manufacturer, packer and/or distributor.
+#### _ CompanyId — CDPH internal identification number for company.
+#### _ Company Name — Company name as entered by manufacturer, packer and/or distributor.
+#### _ BrandName — Brand name as entered by manufacturer, packer and/or distributor. .
+#### _ PrimaryCategoryId — CDPH internal identification number for category.
+#### _ PrimaryCategory — Type of product (13 primary categories: Baby Products, Bath Products, Fragrances, Hair Care Products (non-coloring), Hair Coloring Products, Makeup Products (non-permanent), Nail Products, Oral Hygiene Products, Personal Care Products, Shaving Products, Skin Care Products, Sun-Related Products, Tattoos and Permanent Makeup).
+#### _ SubCategoryId — CDPH internal identification number for subcategory.
+#### __ SubCategory — Type of product within one of the 13 primary categories.
 _ CasId — CDPH internal identification number for chemical.
 _ CasNumber — Chemical identification number
 _ ChemicalId — CDPH internal identification number for this chemical’s record specific to this product.
