@@ -27,8 +27,8 @@ Data cleaning and exploration was done using SQL. was done where necessary using
 
 ## Data Collection
 This data was downloaded from Kaggle. It contains 114,298 rows and 23 columns. The columns contained information such as
-##### * Index — Serial Number
-##### _ CDPHId -The California Department of Public Health (CDPH) internal identification number for product.
+##### *  Index — Serial Number
+##### *  CDPHId -The California Department of Public Health (CDPH) internal identification number for product.
 ##### _ ProductName — Product name as entered by manufacturer, packer and/or distributor.
 ##### _ CSFId- CDPH internal identification number for a color/scent/flavor.
 ##### _ CSF — Color, scent and/or flavor as entered by manufacturer, packer and/or distributor.
