@@ -42,7 +42,7 @@ This data was downloaded from Kaggle. It contains 114,298 rows and 23 columns. T
 ##### * CasId — CDPH internal identification number for chemical.
 ##### * CasNumber — Chemical identification number
 ##### * ChemicalId — CDPH internal identification number for this chemical’s record specific to this product.
-ChemicalName — Name of chemical substance in cosmetic product. Note that chemical substances may have more than one Chemical Name.
+##### * ChemicalName — Name of chemical substance in cosmetic product. Note that chemical substances may have more than one Chemical Name.
 ##### * InitialDateReported — Date the product profile was created by manufacturer, packer and/or distributor, that is, the date that the product was first reported to CDPH.
 ##### * MostRecentDateReported — Date the product profile was last modified by manufacturer, packer and/or distributor.
 ##### * DiscontinuedDate — If applicable, date the product was discontinued.
