@@ -29,27 +29,27 @@ Data cleaning and exploration was done using SQL. was done where necessary using
 This data was downloaded from Kaggle. It contains 114,298 rows and 23 columns. The columns contained information such as
 ##### *  Index — Serial Number
 ##### *  CDPHId -The California Department of Public Health (CDPH) internal identification number for product.
-##### _ ProductName — Product name as entered by manufacturer, packer and/or distributor.
-##### _ CSFId- CDPH internal identification number for a color/scent/flavor.
-##### _ CSF — Color, scent and/or flavor as entered by manufacturer, packer and/or distributor.
-##### _ CompanyId — CDPH internal identification number for company.
-##### _ Company Name — Company name as entered by manufacturer, packer and/or distributor.
-##### _ BrandName — Brand name as entered by manufacturer, packer and/or distributor. .
-##### _ PrimaryCategoryId — CDPH internal identification number for category.
-##### _ PrimaryCategory — Type of product (13 primary categories: Baby Products, Bath Products, Fragrances, Hair Care Products (non-coloring), Hair Coloring Products, Makeup Products (non-permanent), Nail Products, Oral Hygiene Products, Personal Care Products, Shaving Products, Skin Care Products, Sun-Related Products, Tattoos and Permanent Makeup).
-##### _ SubCategoryId — CDPH internal identification number for subcategory.
-##### _ SubCategory — Type of product within one of the 13 primary categories.
-##### _ CasId — CDPH internal identification number for chemical.
-##### _ CasNumber — Chemical identification number
-##### _ ChemicalId — CDPH internal identification number for this chemical’s record specific to this product.
+##### * ProductName — Product name as entered by manufacturer, packer and/or distributor.
+##### * CSFId- CDPH internal identification number for a color/scent/flavor.
+##### * CSF — Color, scent and/or flavor as entered by manufacturer, packer and/or distributor.
+##### * CompanyId — CDPH internal identification number for company.
+##### * Company Name — Company name as entered by manufacturer, packer and/or distributor.
+##### * BrandName — Brand name as entered by manufacturer, packer and/or distributor. .
+##### * PrimaryCategoryId — CDPH internal identification number for category.
+##### * PrimaryCategory — Type of product (13 primary categories: Baby Products, Bath Products, Fragrances, Hair Care Products (non-coloring), Hair Coloring Products, Makeup Products (non-permanent), Nail Products, Oral Hygiene Products, Personal Care Products, Shaving Products, Skin Care Products, Sun-Related Products, Tattoos and Permanent Makeup).
+##### * SubCategoryId — CDPH internal identification number for subcategory.
+##### * SubCategory — Type of product within one of the 13 primary categories.
+##### * CasId — CDPH internal identification number for chemical.
+##### * CasNumber — Chemical identification number
+##### * ChemicalId — CDPH internal identification number for this chemical’s record specific to this product.
 ChemicalName — Name of chemical substance in cosmetic product. Note that chemical substances may have more than one Chemical Name.
-##### _ InitialDateReported — Date the product profile was created by manufacturer, packer and/or distributor, that is, the date that the product was first reported to CDPH.
-##### _ MostRecentDateReported — Date the product profile was last modified by manufacturer, packer and/or distributor.
-##### _ DiscontinuedDate — If applicable, date the product was discontinued.
-##### _ ChemicalCreatedAt — The date that this chemical was first reported to CDPH for this product.
-##### _ ChemicalUpdated At — Date this chemical report was last modified by manufacturer, packer and/or distributor. This field is unique from the product profile.
-##### _ ChemicalDateRemoved — If applicable, date the chemical was removed from product, i.e., reformulation.
-##### _ ChemicalCount — Total number of current chemicals reported for this product. This number does not include chemicals that have been removed from a product. This number is a calculated field based on current reporting.
+##### * InitialDateReported — Date the product profile was created by manufacturer, packer and/or distributor, that is, the date that the product was first reported to CDPH.
+##### * MostRecentDateReported — Date the product profile was last modified by manufacturer, packer and/or distributor.
+##### * DiscontinuedDate — If applicable, date the product was discontinued.
+##### * ChemicalCreatedAt — The date that this chemical was first reported to CDPH for this product.
+##### * ChemicalUpdated At — Date this chemical report was last modified by manufacturer, packer and/or distributor. This field is unique from the product profile.
+##### * ChemicalDateRemoved — If applicable, date the chemical was removed from product, i.e., reformulation.
+##### * ChemicalCount — Total number of current chemicals reported for this product. This number does not include chemicals that have been removed from a product. This number is a calculated field based on current reporting.
 The link to the dataset can be found [here](https://www.kaggle.com/datasets/thedevastator/chemicals-in-cosmetics-what-s-really-in-your).
 
 ## Data Cleaning
